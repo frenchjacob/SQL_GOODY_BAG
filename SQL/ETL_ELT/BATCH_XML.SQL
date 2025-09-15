@@ -3,7 +3,7 @@ WITH lov AS (
     SELECT DISTINCT
         iccid 
     FROM 
-        spark_dl.iot.JASPER_DEVICES
+        database.schema.table
     WHERE 
         DW_INSERT_TMS >= CURRENT_DATE
 ),
